@@ -251,7 +251,7 @@ body {
 }
 .skillsScreen {
   width: 80%;
-  height: 50%;
+  height: 60%;
   background-color: #022c29;
   border-radius: 5px;
   display: flex;
@@ -260,7 +260,7 @@ body {
 }
 .blueSkills {
   width: 80%;
-  height: 10%;
+  height: 5%;
   background-color: #30a7f0;
   border-radius: 5px;
 }
@@ -280,7 +280,7 @@ body {
 }
 .rightButtonsContainer {
   width: 80%;
-  height: 10%;
+  height: 8%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -306,7 +306,7 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .rayas {
   width: 100%;
@@ -390,4 +390,45 @@ body {
   font-family: arcadefont;
   background: transparent;
   border: none;
+}
+.rowWHContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.contentWH {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+  flex-direction: row;
+  height: 40%;
+  align-items: center;
+  margin-left: 2px;
+  /*
+  margin-top: 3px;
+  margin-left: 5px;
+  */
+  
+  color: #ecda31;
+  /*margin: 5px;*/
+  font-size: 8px;
+  font-family: arcadefont;
+}
+.hwItem button {
+  color: #ecda31;
+  margin: 5px;
+  font-size: 9px;
+  font-family: arcadefont;
+  background: transparent;
+  border: none;
+}
+.unitValueRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
 }

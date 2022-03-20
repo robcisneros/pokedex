@@ -18,6 +18,12 @@ const fetchPokemon = () => {
           tipoContainer.innerHTML = "";
           const pokeName = document.getElementById("pokeName");
           pokeName.innerHTML = "";
+          const statsContainer = document.getElementById("statsContent");
+          statsContainer.innerHTML = "";
+          const pokeHeightC = document.getElementById("PokeHeight");
+          pokeHeightC.innerHTML = "";
+          const pokeWeightC = document.getElementById("PokeWeight");
+          pokeWeightC.innerHTML = "";
 
           return res.json();
         }
@@ -30,6 +36,7 @@ const fetchPokemon = () => {
           let dataTypes = data.types;
 
           let dataHeight = data.height;
+          
           let dataWeight = data.weight;
           let dataStats = data.stats;
           pokeObject = {
@@ -60,6 +67,18 @@ const pokeData = (pokeObject) => {
   newButton.classList.add("contentItem");
   newButton.innerHTML = pokeObject.name.toUpperCase();
   pokeName.appendChild(newButton);
+
+  const pokeHeight = document.getElementById("PokeHeight");
+  let heightButton = document.createElement("button");
+  heightButton.classList.add("hwItem");
+  heightButton.innerHTML = pokeObject.height + " M";
+  pokeHeight.appendChild(heightButton);
+
+  const pokeWeight = document.getElementById("PokeWeight");
+  let weightButton = document.createElement("button");
+  weightButton.classList.add("hwItem");
+  weightButton.innerHTML = pokeObject.weight + " KG";
+  pokeWeight.appendChild(weightButton);
 
   addStatsButtons(pokeObject.stats);
   addTypeButtons(pokeObject.types);
