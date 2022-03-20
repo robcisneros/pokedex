@@ -251,18 +251,22 @@ body {
 }
 .skillsScreen {
   width: 80%;
-  height: 40%;
+  height: 50%;
   background-color: #022c29;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .blueSkills {
   width: 80%;
-  height: 70px;
+  height: 10%;
   background-color: #30a7f0;
   border-radius: 5px;
 }
 .sizeWeightContainer {
   width: 80%;
+  height: 15%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -270,13 +274,13 @@ body {
 }
 .sizeWeightRect {
   width: 45%;
-  height: 30px;
+  height: 60%;
   background-color: #022c29;
   border-radius: 5px;
 }
 .rightButtonsContainer {
   width: 80%;
-  height: 50px;
+  height: 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -326,23 +330,64 @@ body {
   width: 100%;
   flex-direction: row;
 
-  height: 15%;
+  height: 30%;
   align-items: center;
   margin-top: 3px;
   margin-left: 5px;
 }
 .titleData {
-  width: 20%;
+  display: flex;
+  width: 100%;
   color: #ecda31;
-  margin: 5px;
+  /*margin: 5px;*/
   font-size: 10px;
   font-family: arcadefont;
 }
-.contentData button {
+
+.contentData{
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.contentItem button {
   color: white;
   margin: 5px;
-  font-size: 10px;
+  font-size: 9px;
   font-family: arcadefont;
   background-color: #3f77d4;
-  height: 100%;
+}
+.rowName {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+
+  height: 15%;
+  align-items: center;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.rowStats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+
+  height: 50%;
+  align-items: center;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.statsItem button {
+  color: white;
+  margin: 5px;
+  font-size: 8px;
+  font-family: arcadefont;
+  background: transparent;
+  border: none;
 }

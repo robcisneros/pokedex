@@ -75,27 +75,38 @@
         <div class="inputSpaceContainer">
           <div class="inputSpace">
             <h3>Search for a Pokemon:</h3>
-            <input type="text" placeholder="press when finished" id="pokeName" name="pokeName">
+            <input type="text" placeholder="press when finished" id="pokemonName" name="pokemonName">
             <button onclick="fetchPokemon()">PRESS</button>
           </div>
         </div>
       </div>
       <div class="rightPokedex mainRed">
         <div class="skillsScreen">
+
+          <div class="rowName">
+            <div class="titleData">NAME:</div>
+            <div class="contentData">
+              <div class="contentItem" id="pokeName"></div>
+            </div>
+          </div>
+
           <div class="rowData">
             <div class="titleData">TYPE:</div>
-            <div class="contentData" id="typeContent"></div>
+            <div class="contentData">
+              <div class="contentItem"  id="typeContent"></div>
+            </div>
             <!--
             <button id="pokeTipo"></button>
             -->
           </div>
-          <div class="rowData">
-            <div class="titleData">MOVES:</div>
-            <div class="contentData" id="typeContent"></div>
-            
-            <button>HI</button>
-            
+
+          <div class="rowStats">
+            <div class="titleData">STATS:</div>
+            <div class="contentData">
+              <div class="statsItem"  id="statsContent"></div>
+            </div>
           </div>
+
         </div>
         <div class="blueSkills"></div>
 
@@ -115,8 +126,10 @@
         </div>
 
         <div class="sizeWeightContainer">
-          <div class="sizeWeightRect"></div>
-          <div class="sizeWeightRect"></div>
+          <div class="sizeWeightRect" id="PokeHeight">
+            
+          </div>
+          <div class="sizeWeightRect" id="PokeWeight"></div>
         </div>
         
       </div>
