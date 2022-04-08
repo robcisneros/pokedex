@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="oneRow">
+        <div class="oneRow leftButtonsContainer">
           <div class="firstColum">
             <div class="blackc">
               <div class="blackcc"></div>
@@ -75,13 +75,15 @@
         <div class="inputSpaceContainer">
           <div class="inputSpace">
             <h3>Search for a Pokemon:</h3>
-            <input
+            <textarea
               type="text"
               placeholder="press when finished"
               id="pokemonName"
               name="pokemonName"
-            />
-            <button onclick="fetchPokemon()">PRESS</button>
+            ></textarea>
+            <button class="SHINEB" onclick="fetchPokemon()">
+              PRESS
+            </button>
           </div>
         </div>
       </div>
@@ -129,15 +131,13 @@
         </div>
 
         <div class="sizeWeightContainer">
-
           <div class="sizeWeightRect">
             <div class="rowWHContainer">
               <div class="contentWH">HEIGHT:</div>
               <div class="contentWH">
                 <div class="unitValueRow">
-                  <div class="hwItem"  id="PokeHeight"></div>
+                  <div class="hwItem" id="PokeHeight"></div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -149,7 +149,6 @@
                 <div class="unitValueRow">
                   <div class="hwItem" id="PokeWeight"></div>
                 </div>
-                
               </div>
             </div>
           </div>

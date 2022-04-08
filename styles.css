@@ -3,6 +3,10 @@ body {
   background-color: antiquewhite;
   font-family: arcadefont;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @font-face {
   font-family: arcadefont;
@@ -36,6 +40,7 @@ body {
 .contenedorHeader {
   margin: 8px;
   justify-content: flex-start;
+  height: 10%;
 }
 .wc {
   width: 60px;
@@ -79,10 +84,15 @@ body {
 .notchedCorner {
   margin: 20px 1px 5px 1px;
   justify-content: center;
+  height: 40%;
+}
+.leftButtonsContainer {
+  height: 10%;
 }
 .notchedBox {
   width: 80%;
-  height: 200px;
+  /*height: 200px;*/
+  height: 100%;
   position: relative;
   border-radius: 5px;
   background-color: #dedfdf;
@@ -132,7 +142,7 @@ body {
 }
 .firstColum {
   width: 20%;
-  height: 50px;
+  height: 100%;
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -154,7 +164,7 @@ body {
 }
 .secondColum {
   width: 40%;
-  height: 50px;
+  height: 100%;
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -182,7 +192,7 @@ body {
 }
 .thirdColum {
   width: 35%;
-  height: 50px;
+  height: 100%;
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -216,39 +226,77 @@ body {
 }
 .inputSpaceContainer {
   margin-top: 5%;
+  height: 35%;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .inputSpace {
   width: 70%;
-  height: 90px;
+  height: 80%;
   background-color: #55ab62;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .inputSpace h3 {
   margin: 5px;
   font-size: 10px;
   font-family: arcadefont;
 }
-.inputSpace button {
-  margin: 5px;
+
+
+.inputSpace textarea {
+  background-color: #55ab62;
+  font-family: arcadefont;
   font-size: 10px;
-  font-family: arcadefont;
-  width: 70%;
-  height: 20%;
-  background-color: #55ab62;
-  border-radius: 10px;
-}
-.inputSpace input {
-  background-color: #55ab62;
-  font-family: arcadefont;
-  font-size: 8px;
   font-weight: 500px;
   width: 80%;
-  height: 30%;
+  height: 20%;
+  text-transform: uppercase;
   color: #000;
+  letter-spacing: 2px;
 }
+
+.SHINEB {
+  background: #55ab62;
+  color: black;
+  width: 70%;
+  height: 30%;
+  margin: 5px;
+  font-size: 12px;
+  font-family: arcadefont;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  display: block;
+  letter-spacing: 4px;
+}
+
+.SHINEB::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(230, 175, 145, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0)); 
+  transform: rotateZ(60deg) translate(-5em, 7.5em);  
+}
+
+.SHINEB::before, .SHINEB::after {
+  animation: sheen 1.5s infinite;
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
 .skillsScreen {
   width: 80%;
   height: 60%;
@@ -431,4 +479,10 @@ body {
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
+}
+@media (min-width: 690px ) {
+  .fullPokedex{
+    width: 600px;
+    min-height: 600px;
+  }
 }
